@@ -98,6 +98,57 @@
     .hero{padding:28px 0}
   }
 </style>
+  <style>
+/* ===== MOBILE HEADER ALIGNMENT (no markup changes) ===== */
+@media (max-width: 900px){
+  .nav{flex-direction:column; align-items:center; gap:10px;}
+  .brand{line-height:1; text-align:center;}
+  .navlinks{justify-content:center}
+}
+
+/* ===== TRIM BLANK SPACE under the script heading ===== */
+.section:first-of-type{ padding-bottom: 14px; }        /* was 56px */
+.hero{ padding-top: 20px; }                            /* a touch tighter */
+
+/* ===== COUNTDOWN — prettier tiles, same HTML ===== */
+.countdown{ gap:14px; }
+.tick{
+  background: linear-gradient(180deg,#ffffff 0%, #faf7ff 100%);
+  border:1px solid #eadcf1;
+  border-radius:18px;
+  padding:20px 14px;
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.06),
+    0 2px 0 rgba(255,255,255,.8) inset;
+  transform: translateZ(0);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.tick:hover{ transform: translateY(-2px); box-shadow:0 14px 30px rgba(0,0,0,.08); }
+.tick .n{
+  font-family:"Playfair Display",serif;
+  font-weight:800;
+  letter-spacing:.5px;
+  font-size:clamp(34px,11vw,56px);  /* bigger but responsive */
+  line-height:1;
+}
+.tick .l{
+  margin-top:8px;
+  font-size:12px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#6f6189;
+}
+
+/* wrap nicely on small phones (2 per row) */
+@media (max-width: 780px){
+  .countdown{flex-wrap:wrap; justify-content:center}
+  .tick{flex:1 1 calc(50% - 14px); min-width:140px; max-width:240px;}
+}
+@media (max-width: 420px){
+  .tick .n{font-size:clamp(28px,10.5vw,50px)}
+}
+</style>
+
 </head>
 <body>
 <header>
