@@ -74,6 +74,30 @@
     .events-grid > .card, .events-grid > .event-card{margin:0 !important}
     @media(max-width:780px){.events-grid{grid-template-columns:1fr}}
   </style>
+  <style>
+  /* === Mobile hot-fix: no changes to your existing rules === */
+  html,body{overflow-x:hidden} /* kill side-scroll on small screens */
+
+  /* Countdown wraps nicely on phones (2 tiles per row) */
+  @media (max-width:780px){
+    .countdown{flex-wrap:wrap;justify-content:center}
+    .tick{flex:1 1 calc(50% - 12px);min-width:120px;max-width:220px;padding:16px 12px}
+  }
+  @media (max-width:420px){
+    .tick .n{font-size:clamp(28px,10.5vw,52px)}
+  }
+
+  /* Ensure event cards stack cleanly on narrow screens */
+  @media (max-width:780px){
+    .events-grid{grid-template-columns:1fr}
+  }
+
+  /* Slightly tighter hero spacing on small screens */
+  @media (max-width:780px){
+    .container{padding:0 12px}
+    .hero{padding:28px 0}
+  }
+</style>
 </head>
 <body>
 <header>
