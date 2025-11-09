@@ -8,16 +8,118 @@
   <meta property="og:title" content="Sneha ♥Manjunatha — Engagement Invite" />
   <meta property="og:description" content="Join us on the seashore for our engagement — 30 Nov 2025, Namaste Beach Resort, Udupi." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://yourusername.github.io/engagement-invite/images/lighthouse.jpg" />
+  <meta property="og:image" content="https://11ms14.github.io/engagement/images/lighthouse.jpg"/>
   <meta property="og:image:alt" content="Pastel lighthouse at sunset" />
   <meta name="theme-color" content="#e9e3f9" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     :root{--lav:#f3edfb;--text:#1a1a1a;--muted:#6b7280;--brand:#d6b6d9;--brand-2:#b7d7e8;--accent:#ffd7ba;--card:#ffffffb8;--line:#ececf4}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background: url('images/bg-stripes.png') top left / auto repeat fixed, var(--lav); color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+    :root{--lav:#f3edfb;--text:#1a1a1a;--muted:#6b7280;--brand:#d6b6d9;--brand-2:#b7d7e8;--accent:#ffd7ba;--card:#ffffffb8;--line:#ececf4;}
+    *{box-sizing:border-box;}
+    body{background:repeating-linear-gradient(135deg,rgba(250,240,255,.25)0,rgba(250,240,255,.25)2px,rgba(255,255,255,.3)4px),var(--lav);background-attachment:fixed;background-size:auto;color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;}
+    header,footer{background:rgba(255,255,255,.85);backdrop-filter:blur(10px)saturate(160%);border-top:1px solid rgba(234,220,241,.7);border-bottom:1px solid rgba(234,220,241,.7);box-shadow:0 4px 18px rgba(0,0,0,.04);}
+    /* Base card styles with decorative borders */
+    .card {
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(234,220,241,.8);
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.06);
+      backdrop-filter: blur(6px) saturate(140%);
+      position: relative;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(135deg, #d6b6d955, #b7d7e855, #ffd7ba55);
+      border-radius: 20px;
+      z-index: -1;
+    }
+
+    /* Event cards with subtle gradient borders */
+    .event-card {
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(234,220,241,.8);
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.06);
+      backdrop-filter: blur(6px) saturate(140%);
+      position: relative;
+    }
+    .event-card::before {
+      content: '';
+      position: absolute;
+      inset: -1.5px;
+      background: linear-gradient(135deg, #d6b6d933, #b7d7e833);
+      border-radius: 19px;
+      z-index: -1;
+    }
+    .event-card.primary::before {
+      background: linear-gradient(135deg, #d6b6d966, #b7d7e866);
+    }
+
+    /* Countdown tiles with matching borders */
+    .tick {
+      background: rgba(255,255,255,.9);
+      border: 1px solid rgba(234,220,241,.8);
+      border-radius: 18px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.06);
+      backdrop-filter: blur(6px) saturate(140%);
+      position: relative;
+    }
+    .tick::before {
+      content: '';
+      position: absolute;
+      inset: -1.5px;
+      background: linear-gradient(135deg, #d6b6d922, #b7d7e822);
+      border-radius: 19px;
+      z-index: -1;
+    }
+
+    /* Navigation pills with subtle outline and animation */
+    .pill {
+      background: rgba(246,231,242,.9);
+      border: 1px solid rgba(255,255,255,.6);
+      box-shadow: 0 2px 6px rgba(0,0,0,.05);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    }
+    .pill::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      background: linear-gradient(135deg,#d6b6d922,#b7d7e822);
+      border-radius: 999px;
+      z-index: -1;
+      opacity: .8;
+      transition: opacity 0.3s ease;
+    }
+    .pill:hover::before {
+      opacity: 1;
+    }
+
+    /* Parents section elegant frame */
+    #parents > div > div {
+      position: relative;
+      border: 1px solid rgba(234,220,241,.85);
+    }
+    #parents > div > div::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(135deg, #d6b6d922, #b7d7e822);
+      border-radius: 22px;
+      z-index: -1;
+    }
+
+    .footer{color:#6b5c7d;font-size:14px;}
+    html,body{margin:0;padding:0;background: var(--lav); color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block;border-radius:16px}
     header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #eee}
@@ -40,6 +142,18 @@
     .script{font-family:'Great Vibes',cursive}
     .footer{padding:36px 0;border-top:1px solid #eee;color:#6b7280}
     .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+  /* Lightbox overlay styles */
+  .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(11,8,15,0.7);z-index:3000;padding:20px}
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:92vw;max-height:82vh;border-radius:12px;box-shadow:0 20px 40px rgba(0,0,0,.6)}
+  .lightbox .caption{color:#fff;margin-top:12px;font-family:'Playfair Display',serif}
+  .lightbox .controls{position:absolute;left:0;right:0;top:50%;display:flex;justify-content:space-between;pointer-events:none}
+  .lightbox button{pointer-events:auto;background:rgba(255,255,255,.12);border:0;color:#fff;padding:10px 14px;border-radius:10px;margin:6px;backdrop-filter:blur(4px)}
+  .lightbox .close{position:absolute;top:18px;right:18px;background:rgba(255,255,255,.12);}
+
+  /* small toast for share/calendar feedback */
+  .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:28px;background:#111;color:#fff;padding:8px 14px;border-radius:999px;box-shadow:0 8px 30px rgba(0,0,0,.4);opacity:0;transition:opacity .18s ease;z-index:4000}
+  .toast.show{opacity:1}
     .info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
     .ibox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 8px 20px rgba(0,0,0,.04)}
     .ibox h4{margin:0 0 6px;font-size:14px;color:#6b7280;letter-spacing:.08em;text-transform:uppercase}
@@ -73,30 +187,154 @@
     
     .events-grid > .card, .events-grid > .event-card{margin:0 !important}
     @media(max-width:780px){.events-grid{grid-template-columns:1fr}}
-  </style>
+    /* === Dress Code palette === */
+    .swatch-legend{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:8px 0 18px}
+    .swatch-legend .badge{background:#fff;border:1px solid var(--line)}
+    .swatch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:10px;max-width:900px;margin:0 auto}
+    .swatch{aspect-ratio:1/1;border-radius:14px;border:1px solid var(--line);box-shadow:0 10px 24px rgba(0,0,0,.06);position:relative;overflow:hidden;background:#fff;transition:transform .18s ease, box-shadow .18s ease}
+    .swatch:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.08)}
+    /* small in-swatch label — hidden by default, shown on hover/focus/active */
+    .swatch::after{
+      content:attr(data-name);
+      position:absolute;
+      left:8px;
+      bottom:8px;
+      font-size:10px;
+      color:#444;
+      background:#fff9;
+      padding:3px 6px;
+      border-radius:8px;
+      border:1px solid #eee;
+      opacity:0;
+      transform:translateY(6px);
+      transition:opacity .18s ease, transform .18s ease;
+      pointer-events:none;
+    }
+    .swatch:hover::after,
+    .swatch:focus::after,
+    .swatch:active::after{
+      opacity:1;
+      transform:translateY(0);
+    }
+    .swatch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(70px,1fr));gap:10px;max-width:900px;margin:0 auto}
+    .swatch{aspect-ratio:1/1;border-radius:14px;border:1px solid var(--line);box-shadow:0 8px 18px rgba(0,0,0,.05);background:#fff;transition:transform .18s ease,box-shadow .18s ease}
+    .swatch:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.08)}
+    .swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.swatch {
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.swatch:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 16px 34px rgba(0, 0, 0, 0.12),
+    0 0 0 3px rgba(234, 220, 241, 0.75);
+  filter: saturate(110%);
+}
+
+.swatch-legend .badge {
+  margin: 5px;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #3e2a47;
+}
+
+    .swatch-tooltip {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: #fff;
+  color: #3e2a47;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(234, 220, 241, 0.85);
+  animation: swatchPop 1.5s cubic-bezier(.2,.9,.2,1) forwards;
+  transform-origin: 50% 100%;
+  z-index: 2000;
+}
+@keyframes swatchPop {
+  0% {opacity: 0; transform: translateX(-50%) translateY(8px) scale(0.85);} 
+  10% {opacity: 1; transform: translateX(-50%) translateY(0) scale(1.08);} 
+  60% {opacity: 1; transform: translateX(-50%) translateY(0) scale(1);} 
+  100% {opacity: 0; transform: translateX(-50%) translateY(-6px) scale(0.95);} 
+}
+
+</style>
   <style>
-  /* === Mobile hot-fix: no changes to your existing rules === */
+  /* === Mobile-specific adjustments === */
   html,body{overflow-x:hidden} /* kill side-scroll on small screens */
 
-  /* Countdown wraps nicely on phones (2 tiles per row) */
   @media (max-width:780px){
+    /* Layout adjustments for mobile */
     .countdown{flex-wrap:wrap;justify-content:center}
-    .tick{flex:1 1 calc(50% - 12px);min-width:120px;max-width:220px;padding:16px 12px}
-  }
-  @media (max-width:420px){
-    .tick .n{font-size:clamp(28px,10.5vw,52px)}
-  }
-
-  /* Ensure event cards stack cleanly on narrow screens */
-  @media (max-width:780px){
+    .tick{
+      flex:1 1 calc(50% - 14px);
+      min-width:120px;
+      max-width:220px;
+      padding:16px 12px;
+    }
     .events-grid{grid-template-columns:1fr}
-  }
-
-  /* Slightly tighter hero spacing on small screens */
-  @media (max-width:780px){
     .container{padding:0 12px}
     .hero{padding:28px 0}
   }
+
+    @media (max-width:420px){
+      .tick .n{font-size:clamp(28px,10.5vw,52px)}
+    }
+
+
+
+    /* Smooth reveal animation for event cards */
+    .event-card {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: revealCard 0.6s ease forwards;
+    }
+
+    @keyframes revealCard {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Stagger event card animations */
+    .event-card:nth-child(1) { animation-delay: 0.1s; }
+    .event-card:nth-child(2) { animation-delay: 0.2s; }
+    .event-card:nth-child(3) { animation-delay: 0.3s; }
+    .event-card:nth-child(4) { animation-delay: 0.4s; }
+
+    /* Subtle floating animation for images */
+    img {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
 </style>
   <style>
 /* ===== MOBILE HEADER ALIGNMENT (no markup changes) ===== */
@@ -148,19 +386,172 @@
   .tick .n{font-size:clamp(28px,10.5vw,50px)}
 }
 </style>
+<style id="ui-hotfix-2025-11-08">
+/* --- Mobile header alignment --- */
+@media (max-width: 900px){
+  .nav{flex-direction:column; align-items:center; gap:10px; flex-wrap:wrap;}
+  .brand{line-height:1; text-align:center; margin-bottom:2px;}
+  .navlinks{justify-content:center; gap:10px;}
+}
+
+/* --- Trim the large gap under the script heading --- */
+.section:first-of-type{ padding-bottom:14px !important; } /* was 56 */
+.hero{ padding-top:20px !important; }                     /* slightly tighter */
+
+/* --- Prettier, punchier countdown tiles (same HTML) --- */
+.countdown{ gap:14px; }
+.tick{
+  background: linear-gradient(180deg,#ffffff 0%, #faf7ff 100%);
+  border:1px solid #eadcf1;
+  border-radius:18px;
+  padding:20px 14px;
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.06),
+    0 2px 0 rgba(255,255,255,.8) inset;
+  transform: translateZ(0);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.tick:hover{ transform: translateY(-2px); box-shadow:0 14px 30px rgba(0,0,0,.08); }
+.tick .n{
+  font-family:"Playfair Display",serif;
+  font-weight:800;
+  letter-spacing:.5px;
+  font-size:clamp(34px,11vw,56px);
+  line-height:1;
+}
+.tick .l{
+  margin-top:8px;
+  font-size:12px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:#6f6189;
+}
+/* Wrap to 2 per row on small phones */
+@media (max-width:780px){
+  .countdown{flex-wrap:wrap; justify-content:center}
+  .tick{flex:1 1 calc(50% - 14px); min-width:140px; max-width:240px;}
+}
+@media (max-width:420px){
+  .tick .n{font-size:clamp(28px,10.5vw,50px)}
+}
+</style>
+
+<style>
+  /* Section boxing: optional, subtle cards for each section */
+  .section.boxed { padding-top: 42px; padding-bottom: 42px; }
+  .section.boxed > .container {
+  /* glassy card using off-white gradient */
+  background: linear-gradient(180deg, #FBFBF9 0%, #F6F6F4 100%);
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: 0 14px 40px rgba(10,8,12,0.06), inset 0 1px 0 rgba(255,255,255,0.6);
+    border: 1px solid rgba(233,218,236,0.85);
+    backdrop-filter: blur(6px) saturate(130%);
+    position:relative;
+    overflow:hidden;
+  }
+  /* soft sheen to suggest glass - subtle, non-distracting */
+  .section.boxed > .container::before{
+    content:'';
+    position:absolute;left:0;top:0;right:0;height:60%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.48), rgba(255,255,255,0.06));
+    transform:skewY(-2deg) translateY(-4px);
+    pointer-events:none;
+    mix-blend-mode:overlay;
+  }
+  /* Slight spacing between boxed sections */
+  .section.boxed + .section.boxed { margin-top: 20px; }
+  /* Make boxed sections responsive */
+  @media (max-width:780px){
+    .section.boxed > .container { padding: 18px; border-radius:14px; }
+    /* reduce sheen on small screens for clarity */
+    .section.boxed > .container::before{ opacity:0.18 }
+  }
+
+  /* Glass styles for event cards and gallery tiles */
+  .event-card {
+    background: linear-gradient(180deg, rgba(251,251,249,0.9) 0%, rgba(246,246,244,0.85) 100%);
+    border: 1px solid rgba(233,218,236,0.85);
+    backdrop-filter: blur(6px) saturate(120%);
+    box-shadow: 0 10px 26px rgba(12,8,16,0.05);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .event-card:hover{ transform:translateY(-4px); box-shadow:0 18px 38px rgba(12,8,16,0.08) }
+
+  /* Gallery image tiles get a soft glass frame */
+  .gallery img{
+    border-radius:12px;
+    border:1px solid rgba(233,218,236,0.85);
+    box-shadow:0 8px 26px rgba(12,8,16,0.06);
+    background: linear-gradient(180deg, rgba(251,251,249,0.7), rgba(246,246,244,0.6));
+    overflow:hidden;
+  }
+
+  /* Decorative family card styling */
+  .family-card{
+    max-width:720px;
+    margin:0 auto;
+  /* glassy family card using off-white gradient */
+  background: linear-gradient(180deg, #FBFBF9 0%, #F6F6F4 100%);
+    border-radius:20px;
+    padding:32px 20px;
+    box-shadow:0 16px 44px rgba(12,8,16,0.06), inset 0 1px 0 rgba(255,255,255,0.55);
+    position:relative;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.6);
+    backdrop-filter: blur(6px) saturate(130%);
+  }
+  .family-card::before{
+    content:'';
+    position:absolute;left:-80px; top:-60px;
+    width:260px; height:260px;
+    background: radial-gradient(circle at 30% 30%, rgba(214,182,217,0.14), transparent 40%), radial-gradient(circle at 70% 70%, rgba(183,215,232,0.08), transparent 40%);
+    transform:rotate(12deg);
+    pointer-events:none;
+    mix-blend-mode:soft-light;
+  }
+  .family-card::after{
+    content:'';
+    position:absolute;
+    right:-60px; bottom:-60px;
+    width:220px; height:220px;
+    background: radial-gradient(circle at 30% 30%, rgba(255,215,186,0.12), transparent 40%), radial-gradient(circle at 70% 70%, rgba(214,182,217,0.08), transparent 40%);
+    pointer-events:none;
+    mix-blend-mode:soft-light;
+  }
+  .family-card::before{
+    content:'';
+    position:absolute;
+    left:-80px; top:-60px;
+    width:260px; height:260px;
+    background: radial-gradient(circle at 30% 30%, rgba(214,182,217,0.18), transparent 40%), radial-gradient(circle at 70% 70%, rgba(183,215,232,0.12), transparent 40%);
+    transform:rotate(12deg);
+    pointer-events:none;
+  }
+  .family-card::after{
+    content:'';
+    position:absolute;
+    right:-60px; bottom:-60px;
+    width:220px; height:220px;
+    background: radial-gradient(circle at 30% 30%, rgba(255,215,186,0.12), transparent 40%), radial-gradient(circle at 70% 70%, rgba(214,182,217,0.10), transparent 40%);
+    pointer-events:none;
+  }
+  /* Slightly lift inner headings for contrast */
+  .family-card h2, .family-card p{position:relative; z-index:1}
+</style>
 
 </head>
 <body>
 <header>
   <div class="container nav">
     <div class="brand">Sneha ♥Manjunath</div>
-    <nav class="navlinks">
+    <nav class="navlinks" aria-label="Primary navigation">
       <a class="pill" href="#home">Home</a>
       <a class="pill" href="#events">Events</a>
-      <a class="pill" href="#travel">Travel & Stay</a>
+      <a class="pill" href="#navigate">Navigate</a>
       <a class="pill" href="#gallery">Gallery</a>
+      <a class="pill" href="#dresscode">DressCode</a>
       <a class="pill" href="#upload">Upload</a>
-      <a class="pill" href="#faq">FAQ</a>
     </nav>
   </div>
 </header>
@@ -172,7 +563,7 @@
       <div class="script" style="font-size:clamp(36px,9vw,86px);color:#2b2b2b">Sneha & Manjunath</div>
     </div>
 </section>
-<main id="home" class="hero">
+<main id="home" class="hero" role="main">
   <div class="container grid">
     <div class="card p32" style="grid-column:span 7;">
       <span class="badge">By the sea, with love</span>
@@ -186,7 +577,7 @@
       <div style="margin-top:12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center">
         <span class="badge">📅 30 Nov 2025</span>
         <span class="badge">📍 Namaste Beach Resort, Kaup (Udupi)</span>
-        <span class="badge">👗 Pastel & elegant</span>
+        <span class="badge">🥻 Pastel & elegant</span>
       </div>
     </div>
     <div class="card p24" style="grid-column:span 5;align-self:stretch">
@@ -195,12 +586,56 @@
     </div>
   </div>
 </main>
+<section id="parents" class="section" style="background:linear-gradient(180deg,#f9f7fb 0%,#f4f0f9 100%); padding:60px 0 40px;">
+  <div class="container" style="text-align:center;">
 
-<section id="events" class="section">
+    <p style="font-family:'Inter',sans-serif; font-weight:400; letter-spacing:2px; color:var(--brand); font-size:clamp(16px,2.6vw,19px); margin-bottom:10px; text-transform:uppercase;">
+      With heartfelt blessings and endless love
+    </p>
+
+    <h2 style="font-family:'Playfair Display',serif; font-weight:700; color:#3e2a47; font-size:clamp(30px,5vw,40px); margin:0;">
+      Our Families Warmly Invite You
+    </h2>
+
+    <p class="script" style="font-family:'Inter',sans-serif; font-weight:400; letter-spacing:2px; color:var(--brand); font-size:clamp(16px,2.6vw,19px); margin-bottom:10px; text-transform:uppercase;">
+      to celebrate the engagement
+    </p>
+
+    <div style="font-size:34px; margin-bottom:22px;">🌸</div>
+
+  <div class="family-card" style="max-width:720px; margin:0 auto;">
+
+      <!-- Sneha's parents -->
+      <p style="font-family:'Libre Baskerville',serif; font-weight:700; letter-spacing:0.2px; font-size:clamp(22px,3.8vw,28px); color:#1f1b24; margin:0;">
+        Mrs Saraswathi &amp; Mr Harischandra T
+      </p>
+      <p style="font-family:'Playfair Display',serif; font-weight:400; font-style:italic; color:#6e5a7c; font-size:clamp(15px,3vw,18px); margin:4px 0 14px;">
+        – with love for their daughter <span style="color:#8c6a95; font-weight:600; font-style:normal;">Sneha</span>
+      </p>
+
+      <div style="width:50px; height:1px; background:#e3d8ec; margin:16px auto;"></div>
+
+      <!-- Manjunath's parents -->
+      <p style="font-family:'Libre Baskerville',serif; font-weight:700; letter-spacing:0.2px; font-size:clamp(22px,3.8vw,28px); color:#1f1b24; margin:0;">
+        Mrs Madhumalathy T &amp; Mr D. Basavaraj
+      </p>
+      <p style="font-family:'Playfair Display',serif; font-weight:400; font-style:italic; color:#6e5a7c; font-size:clamp(15px,3vw,18px); margin:4px 0 0;">
+        – with love for their son <span style="color:#8c6a95; font-weight:600; font-style:normal;">Manjunath</span>
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<section id="events" class="section boxed">
   <div class="container" style="text-align:center">
     <h2 class="h2">Events & Schedule</h2>
     <p class="lead">All timings are evening.</p>
     <div class="events-grid">
+    <div class="event-card" data-icon="🪔">
+      <div class="event-title">Engagement Ritual Pooje</div>
+      <div class="event-time">4:30 PM · With family blessings</div>
+    </div>
     <div class="event-card primary" data-icon="💍">
       <div class="event-title">RING EXCHANGE</div>
       <div class="event-time">5:30 PM · Under the golden sky</div>
@@ -222,7 +657,7 @@
   </div>
 </section>
 
-<section id="travel" class="section">
+<section id="travel" class="section boxed">
   <div class="container">
     <h2 class="h2">Navigate your way to here:</h2>
     <p class="lead">Venue: Namaste Beach Resort, Kaup (Udupi)</p>
@@ -234,25 +669,122 @@
   </div>
 </section>
 
-<section id="gallery" class="section">
+<section id="gallery" class="section boxed">
   <div class="container">
     <h2 class="h2">Gallery</h2>
-    <p class="lead">A peek into our pastel world.</p>
+    <p class="lead">A peek into our world.</p>
     <div class="gallery">
-      <img src="images/gallery/1.jpg" alt="gallery image">
-      <img src="images/gallery/2.jpg" alt="gallery image">
-      <img src="images/gallery/3.jpg" alt="gallery image">
-      <img src="images/gallery/4.jpg" alt="gallery image">
-	<img src="images/gallery/5.jpg" alt="gallery image">
-	<img src="images/gallery/6.jpg" alt="gallery image">
-	<img src="images/gallery/7.jpg" alt="gallery image">
-	<img src="images/gallery/8.jpg" alt="gallery image">
-	<img src="images/gallery/9.jpg" alt="gallery image">
+      <img src="images/gallery/1.jpg" alt="Gallery photo 1" loading="lazy" decoding="async" data-index="0" tabindex="0">
+      <img src="images/gallery/2.jpg" alt="Gallery photo 2" loading="lazy" decoding="async" data-index="1" tabindex="0">
+      <img src="images/gallery/3.jpg" alt="Gallery photo 3" loading="lazy" decoding="async" data-index="2" tabindex="0">
+      <img src="images/gallery/4.jpg" alt="Gallery photo 4" loading="lazy" decoding="async" data-index="3" tabindex="0">
+      <img src="images/gallery/5.jpg" alt="Gallery photo 5" loading="lazy" decoding="async" data-index="4" tabindex="0">
+      <img src="images/gallery/6.jpg" alt="Gallery photo 6" loading="lazy" decoding="async" data-index="5" tabindex="0">
+      <img src="images/gallery/7.jpg" alt="Gallery photo 7" loading="lazy" decoding="async" data-index="6" tabindex="0">
+      <img src="images/gallery/8.jpg" alt="Gallery photo 8" loading="lazy" decoding="async" data-index="7" tabindex="0">
+      <img src="images/gallery/9.jpg" alt="Gallery photo 9" loading="lazy" decoding="async" data-index="8" tabindex="0">
     </div>
   </div>
 </section>
 
-<section id="upload" class="section">
+<section id="dresscode" class="section boxed">
+  <div class="container" style="text-align:center">
+    <h2 class="h2">Dress Code — Light Pastels</h2>
+    <p class="lead">Soft, breezy shades that blend with the sea and sunset — pastel tones make every photo glow beautifully 🌅</p>
+
+    <div class="swatch-legend" style="margin:15px 0 30px;">
+      <span class="badge" style="background:rgba(246,231,242,.9);border:1px solid rgba(255,255,255,.6);box-shadow:0 2px 6px rgba(0,0,0,.05);padding:6px 14px;border-radius:30px;font-size:14px;">✨ Light &amp; Airy</span>
+      <span class="badge" style="background:rgba(231,241,250,.9);border:1px solid rgba(255,255,255,.6);box-shadow:0 2px 6px rgba(0,0,0,.05);padding:6px 14px;border-radius:30px;font-size:14px;">💡 Solids or Subtle Prints</span>
+      <span class="badge" style="background:rgba(240,249,245,.9);border:1px solid rgba(255,255,255,.6);box-shadow:0 2px 6px rgba(0,0,0,.05);padding:6px 14px;border-radius:30px;font-size:14px;">🎨 Mix &amp; Match Tones</span>
+    </div>
+
+
+    <div class="swatch-grid">
+      <!-- Pinks & Peaches -->
+      <div class="swatch" style="background:#FDE2E4" data-name="Blush Pink"></div>
+      <div class="swatch" style="background:#FAD2E1" data-name="Soft Rose"></div>
+      <div class="swatch" style="background:#FFDFD3" data-name="Peach"></div>
+      <div class="swatch" style="background:#FCE7F3" data-name="Misty Pink"></div>
+      <div class="swatch" style="background:#FBCFE8" data-name="Cotton Candy"></div>
+      <div class="swatch" style="background:#EAD1DC" data-name="Dusty Rose"></div>
+      <div class="swatch" style="background:#F8EDEB" data-name="Creamy Blush"></div>
+      <div class="swatch" style="background:#FAE1DD" data-name="Coral Blush"></div>
+
+      <!-- Lavenders & Mauves -->
+      <div class="swatch" style="background:#E9D5FF" data-name="Lavender"></div>
+      <div class="swatch" style="background:#EDE9FE" data-name="Pale Lavender"></div>
+      <div class="swatch" style="background:#F5D0FE" data-name="Lilac"></div>
+      <div class="swatch" style="background:#EEE5E9" data-name="Mauve Mist"></div>
+      <div class="swatch" style="background:#EAD1E0" data-name="Mauve"></div>
+      <div class="swatch" style="background:#E6D4EB" data-name="Heather"></div>
+      <div class="swatch" style="background:#F2E6FA" data-name="Wisteria"></div>
+
+      <!-- Yellows & Creams -->
+      <div class="swatch" style="background:#FFF3C4" data-name="Pale Yellow"></div>
+      <div class="swatch" style="background:#FEF3C7" data-name="Cream"></div>
+      <div class="swatch" style="background:#FCF6BD" data-name="Lemon Chiffon"></div>
+      <div class="swatch" style="background:#FFF7ED" data-name="Peach Cream"></div>
+      <div class="swatch" style="background:#FDFCDC" data-name="Ivory"></div>
+      <div class="swatch" style="background:#FAF9F0" data-name="Off White"></div>
+      <div class="swatch" style="background:#FFF8E7" data-name="Warm Cream"></div>
+      <div class="swatch" style="background:#F7F3E3" data-name="Sand Cream"></div>
+
+      <!-- Mints, Pistachio & Greens -->
+      <div class="swatch" style="background:#E2ECE9" data-name="Mint"></div>
+      <div class="swatch" style="background:#CDEAC0" data-name="Pistachio"></div>
+      <div class="swatch" style="background:#E6F4EA" data-name="Seafoam"></div>
+      <div class="swatch" style="background:#F2FCE2" data-name="Tea Green"></div>
+      <div class="swatch" style="background:#DDE5B6" data-name="Sage"></div>
+      <div class="swatch" style="background:#E2F0CB" data-name="Pale Mint"></div>
+      <div class="swatch" style="background:#E7F0C3" data-name="Lime Mist"></div>
+      <div class="swatch" style="background:#EAFBE6" data-name="Celadon"></div>
+      <div class="swatch" style="background:#E4F8D9" data-name="Spring Green"></div>
+      <div class="swatch" style="background:#EFFAE5" data-name="Mint Frost"></div>
+      <div class="swatch" style="background:#E8F5E9" data-name="Soft Green"></div>
+
+      <!-- Blues & Aquas -->
+      <div class="swatch" style="background:#E0F2FE" data-name="Sky Blue"></div>
+      <div class="swatch" style="background:#D7E3FC" data-name="Baby Blue"></div>
+      <div class="swatch" style="background:#E0E7FF" data-name="Periwinkle"></div>
+      <div class="swatch" style="background:#BFD7EA" data-name="Aqua"></div>
+      <div class="swatch" style="background:#C9E4DE" data-name="Sea Glass"></div>
+      <div class="swatch" style="background:#DBF3FA" data-name="Pale Aqua"></div>
+      <div class="swatch" style="background:#CAF0F8" data-name="Aqua Mist"></div>
+      <div class="swatch" style="background:#ADE8F4" data-name="Ice Blue"></div>
+      <div class="swatch" style="background:#D0E1F9" data-name="Powder Blue"></div>
+      <div class="swatch" style="background:#E1E5F2" data-name="Cloud Blue"></div>
+
+      <!-- Neutrals & Sands -->
+      <div class="swatch" style="background:#F5E6CC" data-name="Sand"></div>
+      <div class="swatch" style="background:#EADDD0" data-name="Warm Sand"></div>
+      <div class="swatch" style="background:#F0EFEB" data-name="Linen"></div>
+      <div class="swatch" style="background:#ECEAE4" data-name="Stone"></div>
+      <div class="swatch" style="background:#FCF5C7" data-name="Pale Sand"></div>
+      <div class="swatch" style="background:#E6F2F8" data-name="Mist"></div>
+      <div class="swatch" style="background:#EAF2F8" data-name="Sea Mist"></div>
+      <div class="swatch" style="background:#E9DCC9" data-name="Dune"></div>
+      <div class="swatch" style="background:#F9E6CF" data-name="Apricot Cream"></div>
+      <div class="swatch" style="background:#F2E3D5" data-name="Warm Beige"></div>
+      <div class="swatch" style="background:#EDE4D4" data-name="Almond"></div>
+
+      <!-- Extra softs -->
+      <div class="swatch" style="background:#FCEED9" data-name="Soft Peach"></div>
+      <div class="swatch" style="background:#FDF2F8" data-name="Blush Cream"></div>
+      <div class="swatch" style="background:#F1FAEE" data-name="Ivy Mist"></div>
+      <div class="swatch" style="background:#E8EAF6" data-name="Lavender Fog"></div>
+      <div class="swatch" style="background:#E8F6F3" data-name="Mint Whisper"></div>
+      <div class="swatch" style="background:#FBEFD9" data-name="Butter"></div>
+      <div class="swatch" style="background:#FAF1E6" data-name="Vanilla"></div>
+      <div class="swatch" style="background:#F9EAE5" data-name="Rose Cream"></div>
+      <div class="swatch" style="background:#F4EDE1" data-name="Seashell"></div>
+      <div class="swatch" style="background:#E6D4EB" data-name="Heather"></div>
+      <div class="swatch" style="background:#F2E6FA" data-name="Wisteria"></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="upload" class="section boxed">
   <div class="container" style="text-align:center">
     <h2 class="h2">Share Your Photos & Videos</h2>
     <p class="lead">We’d love to see the day from your lens!</p>
@@ -260,16 +792,18 @@
   </div>
 </section>
 
-<section id="faq" class="section">
-  <div class="container" style="text-align:center">
-    <h2 class="h2">FAQ</h2>
-    <div class="card p24" style="max-width:760px;margin:0 auto">
-    <div class="card p24" style="max-width:760px;margin:10px auto 0">
-      <h4>Dress code?</h4>
-      <p class="lead">Pastels. Comfortable evening wear[light shades to match the theme]. Sunset-friendly photos guaranteed 🌅</p>
-    </div>
+<!-- Lightbox overlay (hidden by default) -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="close" aria-label="Close" title="Close">✕</button>
+  <div class="controls">
+    <button id="lbPrev" aria-label="Previous">◀</button>
+    <button id="lbNext" aria-label="Next">▶</button>
   </div>
-</section>
+  <figure style="text-align:center">
+    <img id="lbImage" src="" alt="" />
+    <figcaption class="caption" id="lbCaption"></figcaption>
+  </figure>
+</div>
 
 <footer class="footer">
   <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
@@ -279,20 +813,47 @@
 </footer>
 
 <script>
-  // Share link
-  const toast=document.createElement('div');toast.className='toast';document.body.appendChild(toast);
-  const shareBtn=document.getElementById('shareBtn');if(shareBtn){shareBtn.onclick=async()=>{try{if(navigator.share){await navigator.share({title:document.title,url:location.href});}else{await navigator.clipboard.writeText(location.href);toast.textContent='Link Copied!';toast.style.opacity=1;setTimeout(()=>toast.style.opacity=0,1500);}}catch(e){}}}
+  // Share link + Add-to-Calendar improvements
+  const toast = document.createElement('div'); toast.className = 'toast'; document.body.appendChild(toast);
 
-  // Add-to-Calendar (.ics)
-  document.getElementById('addCalendar').onclick=()=>{const ics=`BEGIN:VCALENDAR
-VERSION:2.0
-BEGIN:VEVENT
-DTSTART:20251130T120000Z
-SUMMARY:Sneha ♥Manjunath — Engagement
-LOCATION:Namaste Beach Resort, Kaup (Udupi)
-DESCRIPTION:Ring Exchange 5:30 PM; Games & Dances 6:00 PM; Dinner 7:30 PM onwards
-END:VEVENT
-END:VCALENDAR`;const blob=new Blob([ics],{type:'text/calendar'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Engagement.ics';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+  const shareBtn = document.getElementById('shareBtn');
+  if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+      try {
+        if (navigator.share) {
+          await navigator.share({ title: document.title, url: location.href });
+          toast.textContent = 'Shared';
+        } else {
+          await navigator.clipboard.writeText(location.href);
+          toast.textContent = 'Link copied';
+        }
+      } catch (e) {
+        toast.textContent = 'Could not share';
+      }
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1600);
+    });
+  }
+
+  // Add-to-Calendar (.ics) — improved with UID and DTSTAMP
+  (function(){
+    const btn = document.getElementById('addCalendar');
+    if(!btn) return;
+    btn.addEventListener('click', ()=>{
+      // Event: 2025-11-30 at 17:30 Asia/Kolkata (which is 12:00Z)
+      const evUtc = new Date(Date.UTC(2025,10,30,12,0,0));
+      function toIcsDate(d){ return d.toISOString().replace(/[-:\.]/g,'').split('Z')[0] + 'Z'; }
+      const dtstamp = toIcsDate(new Date());
+      const dtstart = toIcsDate(evUtc);
+      const uid = `engagement-${Date.now()}@sneha-manjunath`;
+      const ics = `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//engagement//EN\nBEGIN:VEVENT\nUID:${uid}\nDTSTAMP:${dtstamp}\nDTSTART:${dtstart}\nSUMMARY:Sneha ♥Manjunath — Engagement\nLOCATION:Namaste Beach Resort, Kaup (Udupi)\nDESCRIPTION:Ring Exchange 5:30 PM; Games & Dances 6:00 PM; Dinner 7:30 PM onwards\nEND:VEVENT\nEND:VCALENDAR`;
+      const blob = new Blob([ics], { type: 'text/calendar' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'Engagement.ics'; a.click();
+      setTimeout(()=>URL.revokeObjectURL(url),1500);
+      toast.textContent = 'Calendar file downloaded'; toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'),1600);
+    });
+  })();
 
   // Countdown to Nov 30, 2025 5:30 PM IST
   const cd=document.getElementById('countdown');
@@ -305,10 +866,67 @@ END:VCALENDAR`;const blob=new Blob([ics],{type:'text/calendar'});const url=URL.c
                   <div class="tick"><div class="n">${String(sec).padStart(2,'0')}</div><div class="l">secs</div></div>`;
   }
   (function start(){
-    const target = new Date('2025-11-30T17:30:00+05:30');
+    const target = new Date('2025-11-30T17:30:00+06:30');
     renderCountdown(target - new Date());
     setInterval(()=>renderCountdown(target - new Date()),1000);
   })();
 </script>
+
+<script>
+// Lightbox behaviour
+(function(){
+  const gallery = Array.from(document.querySelectorAll('.gallery img'));
+  if(!gallery.length) return;
+  const lb = document.getElementById('lightbox');
+  const lbImage = document.getElementById('lbImage');
+  const lbCaption = document.getElementById('lbCaption');
+  const btnClose = lb.querySelector('.close');
+  const btnPrev = document.getElementById('lbPrev');
+  const btnNext = document.getElementById('lbNext');
+  let idx = 0;
+
+  function openAt(i){
+    idx = (i + gallery.length) % gallery.length;
+    const img = gallery[idx];
+    lbImage.src = img.src;
+    lbImage.alt = img.alt || `Gallery photo ${idx+1}`;
+    lbCaption.textContent = img.alt || '';
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden','false');
+    // focus for accessibility
+    btnClose.focus();
+  }
+  function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); lbImage.src=''; }
+  function prev(){ openAt(idx-1); }
+  function next(){ openAt(idx+1); }
+
+  gallery.forEach((img,i)=>{
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', ()=> openAt(i));
+    img.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' ') openAt(i); });
+  });
+
+  btnClose.addEventListener('click', close);
+  btnPrev.addEventListener('click', prev);
+  btnNext.addEventListener('click', next);
+
+  // close on backdrop click
+  lb.addEventListener('click', (e)=>{ if(e.target === lb) close(); });
+  // keyboard
+  document.addEventListener('keydown',(e)=>{
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowLeft') prev();
+    if(e.key === 'ArrowRight') next();
+  });
+
+  // simple swipe detection for touch
+  let startX = null;
+  lb.addEventListener('pointerdown',(e)=>{ startX = e.clientX; });
+  lb.addEventListener('pointerup',(e)=>{ if(startX==null) return; const dx = e.clientX - startX; if(Math.abs(dx)>40){ if(dx>0) prev(); else next(); } startX = null; });
+})();
+</script>
+
 </body>
 </html>
+
